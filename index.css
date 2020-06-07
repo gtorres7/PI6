@@ -25,12 +25,17 @@ body {
 
 .navbar {
   font-size: large;
+  font-weight: bold;
   margin-top: 1%;
   text-align: center;
 }
 
 .navbar a {
   text-decoration: none;
+}
+
+.navbar a:hover {
+  border-bottom: 3px solid orange;
 }
 
 .sensor1 {
@@ -66,9 +71,13 @@ body {
   margin-right: 3%;
 }
 
+.sensor1:hover {
+  background-color: orange;
+}
+
 .sensor2 {
   border-radius: 20px;
-  background-color: #8b1e1e;
+  background-color: #1aa570;
   opacity: .7;
   color: whitesmoke;
   font-weight: bold;
@@ -99,9 +108,22 @@ body {
   margin-right: 3%;
 }
 
+.sensor2:hover {
+  background-color: greenyellow;
+}
+
+.sensor3:hover {
+  background-color: yellow;
+  color: white;
+}
+
+.sensor3:hover div:nth-child(1) {
+  color: black;
+}
+
 .sensor3 {
   border-radius: 20px;
-  background-color: #8b1e1e;
+  background-color: #eaf552;
   opacity: .7;
   color: whitesmoke;
   font-weight: bold;
@@ -111,6 +133,7 @@ body {
 }
 
 .sensor3 div:nth-child(1) {
+  color: grey;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
